@@ -4,8 +4,10 @@ export const Appcontext = createContext()
 
 export const AppcontextProvider = (props) =>{
 
-    const value = {
+    const currency = import.meta.env.VITE_CURRENCY
 
+    const value = {
+       currency
     }
     return(
         <Appcontext.Provider value = {value}>
