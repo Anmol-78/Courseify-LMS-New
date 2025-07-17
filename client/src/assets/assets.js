@@ -104,24 +104,24 @@ export const dummyEducatorData = {
 export const dummyTestimonial = [
     {
         name: 'Donald Jackman',
-        role: 'SWE 1 @ Amazon',
+        role: 'Frontend Engineer @ Spotify',
         image: assets.profile_img_1,
         rating: 5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'Courseify has completely transformed the way I approach frontend development. The structured paths and hands-on projects helped me build real-world skills faster than I expected.',
     },
     {
         name: 'Richard Nelson',
-        role: 'SWE 2 @ Samsung',
+        role: 'Full Stack Developer @ Amazon',
         image: assets.profile_img_2,
         rating: 4,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'I’ve tried many platforms, but Courseify stands out. The personalized learning experience and high-quality content gave me a real edge in my interviews and job performance.',
     },
     {
         name: 'James Washington',
-        role: 'SWE 2 @ Google',
+        role: 'Machine Learning Engineer @ OpenAI',
         image: assets.profile_img_3,
         rating: 4.5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'The courses on Courseify are incredibly well-organized and up to date with the latest tools in AI. Its been my go-to platform for continuous learning and deep skill-building.',
     },
 ];
 
@@ -214,7 +214,7 @@ export const dummyStudentEnrolled = [
 export const dummyCourses = [
     {
         "_id": "605c72efb3f1c2b1f8e4e1a1",
-        "courseTitle": "Introduction to JavaScript",
+        "courseTitle": "Introduction to Advance JavaScript",
         "courseDescription": "<h2>Learn the Basics of JavaScript</h2><p>JavaScript is a versatile programming language that powers the web. In this course, you will learn the fundamentals of JavaScript, including syntax, data types, and control structures.</p><p>This course is perfect for beginners who want to start their journey in web development. By the end of this course, you will be able to create interactive web pages and understand the core concepts of JavaScript.</p><ul><li>Understand the basics of programming</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>",
         "coursePrice": 40.99,
         "isPublished": true,
@@ -359,7 +359,7 @@ export const dummyCourses = [
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ae",
-        "courseTitle": "Cybersecurity Basics",
+        "courseTitle": "Cybersecurity Basics to Advance",
         "courseDescription": "<h2>Protect Systems and Networks</h2><p>Cybersecurity is critical in today's digital age. This course introduces the fundamentals of cybersecurity, including threat analysis, ethical hacking, and secure programming practices.</p><p>By the end of this course, you will understand how to identify vulnerabilities and implement security measures effectively.</p><ul><li>Understand security protocols</li><li>Learn about encryption techniques</li><li>Conduct basic penetration testing</li></ul>",
         "coursePrice": 69.99,
         "isPublished": true,
