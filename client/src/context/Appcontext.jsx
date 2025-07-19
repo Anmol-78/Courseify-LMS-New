@@ -12,7 +12,8 @@ export const AppcontextProvider = (props) =>{
     const navigate = useNavigate()
 
     const [allCourses, setAllCourses] = useState([])
-     const [isEducator, setIsEducator] = useState(true)
+    const [isEducator, setIsEducator] = useState(true)
+    const [enrolledCourses, setEnrolledCourses] = useState([])
 
     // fetch all courses
     const fetchAllCoursses = async (params) => {
@@ -58,13 +59,19 @@ export const AppcontextProvider = (props) =>{
        return totalLectures;
       }
 
+      // fetch user enrolled courses
+      const fetchenrolleduserCourses = async () =>{
+         setEnrolledCourses(dummyCourses)
+      }
+
       useEffect(()=>{
         fetchAllCoursses();
+        fetchenrolleduserCourses();
       },[])
 
     const value = {
        currency,  allCourses,navigate,calculatRating, isEducator, setIsEducator,
-       calculateChapterTime,calculateCourseDuration,calculateNoOfLectures
+       calculateChapterTime,calculateCourseDuration,calculateNoOfLectures,enrolledCourses, fetchenrolleduserCourses
     }
     return(
         <Appcontext.Provider value = {value}>
