@@ -2,7 +2,7 @@ import { Webhook } from "svix";
 import User from "../models/User.js";
 import Stripe from "stripe";
 import { Purchase } from "../models/Purchase.js";
-import Course from "../models/course.js";
+import Course from "../models/Course.model.js";
 
 //API Controller func to manage clerk user woth DB
 export const clerkWebhooks = async (req, res) => {
@@ -23,7 +23,7 @@ export const clerkWebhooks = async (req, res) => {
           _id: data.id,
           email: data.email_addresses[0].email_address,
           name: data.first_name + " " + data.last_name,
-          imageUrl: data.imageUrl,
+          imageUrl: data.image_url,
         };
         await User.create(userData);
         res.json({});
@@ -36,7 +36,7 @@ export const clerkWebhooks = async (req, res) => {
           imageUrl: data.image_url,
         };
         await User.findByIdAndUpdate(data.id, userData);
-        req.json({});
+        res.json({});
         break;
       }
 

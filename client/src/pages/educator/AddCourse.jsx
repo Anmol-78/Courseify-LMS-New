@@ -105,7 +105,7 @@ const AddCourse = () => {
       e.preventDefault()
       if(!image){
         toast.error('Thumbnail Not Selected')
-       return
+       
       }
       
 

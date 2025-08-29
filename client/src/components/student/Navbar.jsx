@@ -26,7 +26,7 @@ const Navbar = () => {
         backendUrl + "/api/educator/update-role",
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${token}`
           },
         }
       );

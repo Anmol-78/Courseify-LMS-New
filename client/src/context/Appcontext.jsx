@@ -22,9 +22,9 @@ export const AppcontextProvider = (props) => {
   const [userData, setUserData] = useState(null);
 
   // fetch all courses
-  const fetchAllCoursses = async (params) => {
+  const fetchAllCoursses = async () => {
     try {
-      const { data } = await axios.get(backendUrl + "/api/course/all");
+      const {data} = await axios.get(backendUrl + '/api/course/all');
 
       if (data.success) {
         setAllCourses(data.courses);
@@ -62,7 +62,7 @@ export const AppcontextProvider = (props) => {
   };
 
   //function to claculate average rating of course
-  const calculatRating = (course) => {
+  const calculateRating = (course) => {
     if (course.courseRatings.length === 0) {
       return 0;
     }
@@ -109,7 +109,7 @@ export const AppcontextProvider = (props) => {
         backendUrl + "/api/user/enrolled-courses",
         {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${token}`
           },
         }
       );
@@ -139,7 +139,7 @@ export const AppcontextProvider = (props) => {
     currency,
     allCourses,
     navigate,
-    calculatRating,
+    calculateRating,
     isEducator,
     setIsEducator,
     calculateChapterTime,
